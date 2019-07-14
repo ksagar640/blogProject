@@ -1,0 +1,18 @@
+<% include ./partials/header.ejs %>
+<style type="text/css">
+	.main{
+		width  : 700px;
+		border : 1px solid gray;
+		margin : 50px auto 0px  auto;
+		padding : 10px;
+	}
+
+</style>
+<br>
+<div class="main">
+<h1> <%= data.titl%> </h1>
+<img src="<%=data.url%>">
+<span><%= data.created.toDateString() %> </span>
+<p> <%=data.body%> </p>
+</div>
+<%include ./partials/footer.ejs %>

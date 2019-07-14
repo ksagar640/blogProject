@@ -1,0 +1,14 @@
+<% include ./partials/header.ejs %>
+
+
+<br>
+<br>
+<% data.forEach(function(blog){  %>
+<h2> <%= blog.titl %>  </h2>
+<img src=" <%=blog.url%> ">
+<h3> <%=blog.created%> </h3>
+<p> <%=blog.body.substring(0,30)%> </p>
+<a href="/blogs/<%=blog._id%>">Read More</a>
+<% }) %>
+
+<% include ./partials/footer.ejs %>

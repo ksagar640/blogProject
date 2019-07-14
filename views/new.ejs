@@ -1,0 +1,36 @@
+<% include ./partials/header.ejs %>  
+
+<style type="text/css">
+	
+.contain{
+	
+	width: 623px ;
+	border :1px solid gray;
+	margin: 30px auto 30px auto;
+	padding : 0px 10px 10px 10px;
+
+}
+
+	
+</style>
+<br>
+
+    <div class="contain">
+		<h1> Create New Post </h1>
+		<form class="ui form" method="POST" action="/newpost">
+		   <div class="field">
+			<label> BLOG TITLE : </label>
+		  	<input type="text" name="newtitl" placeholder="Enter Title">
+		  	</div>
+		  	<div class="field">
+		    <label> Image : </label>
+		  	<input type="text" name="newurl" placeholder="Enter Image Link">
+		  	</div>
+		  	<div class="field">
+		    <label> Content :</label>
+		  	<textarea name="newbody" placeholder="Blog Content Here"></textarea>
+		  	</div>
+			<button class="ui violet big basic button">Submit</button>
+		  </form>	
+	</div>
+<% include ./partials/footer.ejs %>
